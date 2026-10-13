@@ -49,7 +49,7 @@
             set
             {
                 // Ensure ISBN does not contain any letters
-                if (value.All(char.IsDigit) && value != "")
+                if (value.Any(char.IsDigit) && value != "")
                 {
                     isbn = value;
                 }
