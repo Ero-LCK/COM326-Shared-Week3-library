@@ -1,5 +1,9 @@
 using Library;
 
+List<Book> books = new List<Book>();
+List<Member> member = new List<Member>();
+
+
 Book book = new Book();
 // This information is for one book in our library
 book.Title = "C# for beginners";
@@ -19,10 +23,10 @@ book1.DisplayInfo();
 // Create new instances of the Member class
 // These new members are created using the
 // Member constructor in the Members class
-Member member = new Member(1, "John Smith", "1 High Street", 0790090090);
-Member member1 = new Member(2, "Mary Jones", "102 Garden Road", 0790345666);
+Member Member = new Member(1, "John Smith", "1 High Street", 0790090090);
+Member Member1 = new Member(2, "Mary Jones", "102 Garden Road", 0790345666);
 
 Console.WriteLine("Current library members");
-member.DisplayInfo();
-member1.DisplayInfo();
+Member.DisplayInfo();
+Member1.DisplayInfo();
 
